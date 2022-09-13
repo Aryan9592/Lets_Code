@@ -42,5 +42,6 @@ for _ in range(int(input())):
         # Then next player will be the one to get defeated by the above two in ground and defeating them in water and so on....
         if c[i][1] > mx:
             ans += 1
+        # Updating the mx
         mx = max(mx, c[i][1])
     print(ans)
