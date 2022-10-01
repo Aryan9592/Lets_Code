@@ -1,0 +1,31 @@
+
+1. What is a Heap?
+It is a C.B.T (Complete Binary Tree) that comes with a heap order property
+    
+What is a CBT?
+    - Every level is completely filled; last one isn't compulsory to be filled up
+    - nodes always added towards the left..
+
+        E.g                     1                                          |                    1
+                               / \                                         |                   / \
+                              2   3         --> A complete Binary tree     |                  2   3             --> Not a complete binary treee
+                             / \  |                                        |                     / \
+                            4   5 6                                        |                    4   5
+
+2. Two types of Heap:
+    1. Max Heap                                     2. Min Heap
+        E.g:            40                                E.g:                          5
+                       /  \                                                            / \
+                      30  20                                                          10  15
+                     /  \                                                            /  \ 
+                    10   5                                                          20   30
+
+3. Insertion at Heap:
+    In Max Heap:
+        (a). Node -> ith index
+        (b). left child -> 2*i index
+        (c). right child -> 2*i + 1 index
+        (d). parent -> i/2 index
+    
+    Note: -Whenever a new node is added into the heap then first we will add it to the end and then compare it to the parent of that level node
+          -If it's value is greater than the parent then both will be swapped and this will continue till the heap is sorted 
