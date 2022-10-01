@@ -1,0 +1,5 @@
+The numeric statement must be of type int (short int,int, or long int), char or bool
+The case lables must be constants (literals or named constants)
+If no case lable matches the value of numeric-expression, control branches to the default lable (if there is no default lable than control passes to the statement following the entire switch statement)
+After a branch is taken, control proceeds sequentially until either break or the end of the switch statement occurs. That's why there is usually break at the end of the each statement
+
